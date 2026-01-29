@@ -1,0 +1,23 @@
+{
+  "name": "Inworld TTS",
+  "description": "Generate speech from text using Inworld TTS API.",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Inworld TTS"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://api.inworld.ai/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

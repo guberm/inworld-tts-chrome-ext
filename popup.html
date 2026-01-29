@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inworld TTS</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Inworld TTS</h1>
+      <button id="openOptions" class="link-button">Settings</button>
+    </header>
+
+    <label class="field">
+      <span>Text</span>
+      <textarea id="ttsText" rows="5" placeholder="Enter or paste text..."></textarea>
+    </label>
+
+    <div class="button-row">
+      <button id="useSelection" class="secondary">Use selected text</button>
+      <button id="clearText" class="secondary">Clear</button>
+    </div>
+
+    <div class="grid">
+      <label class="field">
+        <span>Language</span>
+        <select id="languageSelect"></select>
+      </label>
+      <label class="field">
+        <span>Voice</span>
+        <select id="voiceSelect"></select>
+      </label>
+    </div>
+
+    <button id="generate" class="primary">Generate Speech</button>
+
+    <div id="status" class="status">Ready</div>
+
+    <audio id="audioPlayer" controls></audio>
+  </div>
+
+  <script src="common.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
